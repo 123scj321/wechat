@@ -1,0 +1,217 @@
+<!--大容器  -->
+<view class='container'>
+<!--列表  -->
+<!-- 折扣商品-->
+<view class='disCountContainer'>
+<!--分类样式  -->
+ <scroll-view scroll-x="true" class="productListText" bindscroll="scrollHandler" scroll-with-animation='true' scroll-left="{{scrollTopLeft}}">
+    <view class="productListContainer {{classIndex==index&&'active'}}" wx:for="{{productListTitle}}" wx:key="{{productListTitle}}" wx:index="index" wx:for-item="item" bindtap='toMove' id='{{index}}'>
+    <text class="text" bindtap='changeClass' id="{{item.detail}}" scroll-into-view="{{item.detail}}">{{item.text}}</text>
+    <text class="subtext" bindtap='changeClass' id="{{item.detail}}" scroll-into-view="{{item.detail}}">{{item.subtitle}}</text>
+    </view>
+ </scroll-view>
+  <!--活动内容介绍  -->
+  <scroll-view scroll-x="true" class="disCountListText" scroll-left="{{scrollLeft}}" scroll-with-animation='true' bindscroll="scrollTopHandler">
+    <view class="disCountContainerText" id='frash'>
+      <view class='disCountinTroduce' wx:for="{{discountList.frash}}" wx:key="{{discountList.frash}}" wx:item="item" wx:index="index">
+        <!--活动内容图片  -->
+        <view class="disCountinTroduceImage">
+          <image src='../{{item.image}}'></image>
+        </view>
+        <!-- 活动详情 -->
+        <view class='disCountinTroduceDetail'>
+          <view class='disCountinTroduceDetailText' hover-class='active'> 
+            <text class="title">{{item.title}}</text>
+            <text class="subtitle">{{item.subtitle}}</text>
+          </view> 
+          <view class='disCountinOtherContainer'>
+            <view class='price'><text>¥{{item.price}}</text> 盒</view> 
+            <view class='count'><icon class='iconfont icon-tianjia'></icon></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="disCountContainerText" id='food'>
+      <view class='disCountinTroduce' wx:for="{{discountList.food}}" wx:key="{{discountList.food}}" wx:item="item" wx:index="index">
+        <!--活动内容图片  -->
+        <view class="disCountinTroduceImage">
+          <image src='../{{item.image}}'></image>
+        </view>
+        <!-- 活动详情 -->
+        <view class='disCountinTroduceDetail'>
+          <view class='disCountinTroduceDetailText' hover-class='active'> 
+            <text class="title">{{item.title}}</text>
+            <text class="subtitle">{{item.subtitle}}</text>
+          </view> 
+          <view class='disCountinOtherContainer'>
+            <view class='price'><text>¥{{item.price}}</text> 盒</view> 
+            <view class='count'><icon class='iconfont icon-tianjia'></icon></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="disCountContainerText" id='lift'>
+      <view class='disCountinTroduce' wx:for="{{discountList.lift}}" wx:key="{{discountList.lift}}" wx:item="item" wx:index="index">
+        <!--活动内容图片  -->
+        <view class="disCountinTroduceImage">
+          <image src='../{{item.image}}'></image>
+        </view>
+        <!-- 活动详情 -->
+        <view class='disCountinTroduceDetail'>
+          <view class='disCountinTroduceDetailText' hover-class='active'> 
+            <text class="title">{{item.title}}</text>
+            <text class="subtitle">{{item.subtitle}}</text>
+          </view> 
+          <view class='disCountinOtherContainer'>
+            <view class='price'><text>¥{{item.price}}</text> 盒</view> 
+            <view class='count'><icon class='iconfont icon-tianjia'></icon></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="disCountContainerText" id='oil'>
+      <view class='disCountinTroduce' wx:for="{{discountList.oil}}" wx:key="{{discountList.oil}}" wx:item="item" wx:index="index">
+        <!--活动内容图片  -->
+        <view class="disCountinTroduceImage">
+          <image src='../{{item.image}}'></image>
+        </view>
+        <!-- 活动详情 -->
+        <view class='disCountinTroduceDetail'>
+          <view class='disCountinTroduceDetailText' hover-class='active'> 
+            <text class="title">{{item.title}}</text>
+            <text class="subtitle">{{item.subtitle}}</text>
+          </view> 
+          <view class='disCountinOtherContainer'>
+            <view class='price'><text>¥{{item.price}}</text> 盒</view> 
+            <view class='count'><icon class='iconfont icon-tianjia'></icon></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="disCountContainerText" id='drink'>
+      <view class='disCountinTroduce' wx:for="{{discountList.drink}}" wx:key="{{discountList.drink}}" wx:item="item" wx:index="index">
+        <!--活动内容图片  -->
+        <view class="disCountinTroduceImage">
+          <image src='../{{item.image}}'></image>
+        </view>
+        <!-- 活动详情 -->
+        <view class='disCountinTroduceDetail'>
+          <view class='disCountinTroduceDetailText' hover-class='active'> 
+            <text class="title">{{item.title}}</text>
+            <text class="subtitle">{{item.subtitle}}</text>
+          </view> 
+          <view class='disCountinOtherContainer'>
+            <view class='price'><text>¥{{item.price}}</text> 盒</view> 
+            <view class='count'><icon class='iconfont icon-tianjia'></icon></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="disCountContainerText" id='parper'>
+      <view class='disCountinTroduce' wx:for="{{discountList.parper}}" wx:key="{{discountList.parper}}" wx:item="item" wx:index="index">
+        <!--活动内容图片  -->
+        <view class="disCountinTroduceImage">
+          <image src='../{{item.image}}'></image>
+        </view>
+        <!-- 活动详情 -->
+        <view class='disCountinTroduceDetail'>
+          <view class='disCountinTroduceDetailText' hover-class='active'> 
+            <text class="title">{{item.title}}</text>
+            <text class="subtitle">{{item.subtitle}}</text>
+          </view> 
+          <view class='disCountinOtherContainer'>
+            <view class='price'><text>¥{{item.price}}</text> 盒</view> 
+            <view class='count'><icon class='iconfont icon-tianjia'></icon></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="disCountContainerText" id='baby'>
+      <view class='disCountinTroduce' wx:for="{{discountList.baby}}" wx:key="{{discountList.baby}}" wx:item="item" wx:index="index">
+        <!--活动内容图片  -->
+        <view class="disCountinTroduceImage">
+          <image src='../{{item.image}}'></image>
+        </view>
+        <!-- 活动详情 -->
+        <view class='disCountinTroduceDetail'>
+          <view class='disCountinTroduceDetailText' hover-class='active'> 
+            <text class="title">{{item.title}}</text>
+            <text class="subtitle">{{item.subtitle}}</text>
+          </view> 
+          <view class='disCountinOtherContainer'>
+            <view class='price'><text>¥{{item.price}}</text> 盒</view> 
+            <view class='count'><icon class='iconfont icon-tianjia'></icon></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<!--太高地步  -->
+
+ <view style="height:240rpx"></view> 
+ <!--shopCart  购物车-->
+  <view class="shopCart">
+    <view class="content">
+      <view class="content-left" bindtap="toggleList">
+        <view class="logo-wrapper">
+          <image src='../../images/car_food.png'></image>
+          <view class="num" wx:if="{{totalCount> 0}}">{{totalCount}}</view>
+          <!-- 点餐数量 -->
+        </view>
+        <view class="price highlight">￥{{totalPrice}}</view>
+        <!-- <view class="desc" hidden='{{out}}'>配送费￥{{deliveryPrice}}元</view> -->
+      </view>
+      <view class="content-right" catchtap="pay">
+        <view class="pay enough" :class="payClass">
+          {{payDesc}} 
+        </view>
+      </view>
+    </view>
+    <view class="shopcart-list" style="display:{{cartShow}}">
+      <!-- <view class="shopcart-list"> -->
+      <view class="list-header" style='display:none'>
+        <view class="title">购物车</view>
+        <text class="empty" bindtap="empty">清空</text>
+      </view>
+      <view class="list-content" style='display:none'>
+        <scroll-view scroll-y class='cartscroll {{scrollout}}'>
+          <view class="shopcart-food" wx:for="{{cartList}}" wx:key="carArray">
+            <view class="name">{{item.merchandise_name}}</view>
+            <view class="price">
+              <span>￥</span>
+              <span>121.00</span>
+            </view> 
+
+            <!--cartControl-->
+            <view class="cartControl-wrapper">
+              <view class="cartControl" style="width:80px;">
+                <view name="fade">
+                  <view class="cart-decre iconfont icon-offline_fill"  data-merchandise_id="{{item.merchandise_id}}" catchtap="reduceCart">
+                  </view>
+                  <view class="cart-counts">{{item.merchandise_count}}</view>
+                  <view class=" iconfont icon-addition_fill cart-addes" data-merchandise_id="{{item.merchandise_id}}" catchtap="addCart"></view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+        <view class="mealbox" hidden='{{out}}'>餐盒费￥{{deliveryPrice}}元</view>
+      </view>
+    </view>
+  </view>
+ <!--底部样式  -->
+<view class="footerContainer">
+  <view class='footerContext'>
+    <view class="home" >
+         <image src="../../../images/if_kitchen_room_home_restaurant-01_1626354.png"></image> 
+    </view>
+    <view class="home" id="../cart/cart" bindtap='skip'>
+        <image src="../../../images/if_kitchen_room_home_restaurant-02_1626355.png"></image>
+    </view>
+    <view class="home" id="../peopleList/peopleList"  bindtap='skip'>
+        <image src="../../../images/if_kitchen_room_home_restaurant-07_1626360.png"></image>
+    </view>
+  </view>
+</view>
+</view>

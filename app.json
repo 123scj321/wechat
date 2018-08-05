@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/peopleList/peopleList"
+  ],
+  "window": {
+    "backgroundTextStyle": "white",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "微信点餐",
+    "navigationBarTextStyle": "white"
+  }
+}

@@ -1,0 +1,166 @@
+page{
+  background: #f0f0f0;
+  color:#ff7000;
+}
+/* 头部信息样式 */
+.title{
+  background-color: #ffffff;
+  width:100%;
+  height:80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  display: flex;
+  color:#333;
+}
+.cartTitle{
+  margin-left:350rpx;
+}
+.cartEdit{
+  margin-left:200rpx;
+}
+/*中间编辑样式  */
+.cartCenter{
+  margin-top:5rpx;
+  background-color: #ffffff;
+  height:100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  display: flex;
+  color:#333;
+  justify-content:space-between;
+}
+.allCheck{
+  margin-left:10rpx;
+}
+.deleteChoose{
+  margin-right: 10rpx;
+  margin-top:20rpx;
+}
+.deleteBtn{
+  color:#ffffff;
+  background: #ff0000;
+  width:160rpx;
+  height:60rpx;
+  font-size:24rpx;
+}
+/*购物车主要内容  */
+.cartMainContainer{
+  margin-top:10rpx;
+  background-color: #ffffff;
+}
+.cartRow{
+  padding-top:10rpx;
+  width:98%;
+  margin:10rpx auto;
+  display: flex;
+  height:240rpx;
+}
+.leftCols{
+  width:220rpx;
+  height:180rpx;
+  overflow: hidden;
+  display: flex;
+}
+.leftCols radio{
+  line-height: 140rpx;
+}
+.leftCols image{
+  margin-top:10rpx;
+  width:140rpx;
+  height:140rpx;
+}
+.centerCols{
+  width:360rpx;
+  font-size:24rpx;
+  padding-top:10rpx;
+}
+.centerCols view:first-child{
+  color:#333;
+  margin-bottom: 10rpx;
+  font-weight: bold;
+}
+.centerCols view:nth-child(2){
+  color:grey;
+  margin-bottom: 10rpx;
+}
+.centerCols view:last-child{
+  color:#ff0000;
+  margin-bottom: 15rpx;
+}
+.centerCols view:last-child text{
+  color:gray;
+}
+.rightTopCols{
+  display: flex;
+}
+.rightBottomCols{
+  margin-top:10rpx;
+  padding-top:10rpx;
+  border-top:2rpx solid gray;
+  text-align: right;
+  font-size:28rpx;
+}
+.rightBottomCols text:first-child{
+  color:gray;
+  font-size: 24rpx;
+}
+rightBottomCols text:last-child{
+  color:#ff0000;
+}
+.rightCols{
+  margin-top:110rpx; 
+  width: 128rpx;
+  display: flex;
+  font-size:24rpx;
+  text-align: center;
+  justify-content: space-between;
+  color:#333;
+}
+.rightCols :not(:nth-child(2)){
+  background: #f0f0f0;
+  width:40rpx;
+  height:40rpx;
+}
+.rightCols :nth-child(2){
+  background: #f0f0f0;
+  width:45rpx;
+  height:40rpx;
+}
+.columnRow{
+  position: fixed;
+  bottom:110rpx;
+  background: #ffffff;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height:100rpx;
+  color:#333;
+  line-height: 100rpx;
+  font-size: 28rpx;
+}
+.allCheckColumn{
+  width:300rpx;
+  margin-left:10rpx;
+}
+.columnPrice{
+  display: flex;
+  width:100rpx;
+  text-align: right;
+}
+.columnBtn{
+  margin:0px;
+  width:200rpx;
+}
+.columnBtn button{
+  width:100%;
+  height:100%;
+  background: #22b2da;
+  border-radius: 0rpx;
+  color:#ffffff;
+  font-size:32rpx;
+  line-height: 100rpx;
+}
+.active{
+  color:#22b2da;
+}

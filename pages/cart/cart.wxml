@@ -1,0 +1,61 @@
+<!--pages/product/cart/cart.wxml-->
+<view>
+  <view class='title'>
+   <view class='cartTitle'>购物车</view>
+   <view class='cartEdit'>删除</view>
+  </view>
+  <view class='cartMainContainer'>
+    <view class='cartRow'>
+      <!--左边布局  -->
+      <view class='leftCols'>
+      <radio color="#ff7000"></radio> 
+      <image src='../../../images/file_594a33aaa54cb.jpg'></image>
+      </view>
+      <!--右边布局  -->
+      <view class="rightColsBox">
+        <!--右上布局  -->
+        <view class="rightTopCols">
+          <view class='centerCols'>
+            <view>悠乐国yolego大连美早樱桃国产车厘子 3斤装</view>
+            <view>规格：300g</view>
+            <view>价格 ¥29.00 <text>/斤</text> </view> 
+          </view>
+          <view class='rightCols'>
+            <view>-</view>
+            <view>0</view>
+            <view class='active'>+</view>
+          </view>
+        </view>
+        <!--右下布局  -->
+        <view class='rightBottomCols'>
+          <text>小计： </text><text>¥13.80</text>
+        </view>
+      </view>
+  </view>
+  </view>
+  <view class='columnRow'>
+    <view class='allCheckColumn'>
+      <radio color='#ff7000'></radio>全选
+    </view>
+    <view catchlongtap='columnPrice'>
+      合计：<text>¥ 157.90</text>
+    </view>
+    <view class='columnBtn'>
+      <button>结算</button>
+    </view>
+  </view>
+  <!--底部样式  -->
+<view class="footerContainer">
+  <view class='footerContext'>
+    <view class="home" id="../index/index" bindtap='skip'>
+         <image src="../../../images/if_kitchen_room_home_restaurant-01_1626354.png"></image> 
+    </view>
+    <view class="home" id="../cart/cart" bindtap='skip'>
+        <image src="../../../images/if_kitchen_room_home_restaurant-02_1626355.png"></image>
+    </view>
+    <view class="home" id="../peopleList/peopleList"  bindtap='skip'>
+        <image src="../../../images/if_kitchen_room_home_restaurant-07_1626360.png"></image>
+    </view>
+  </view>
+</view>
+</view>

@@ -1,0 +1,21 @@
+<!--pages/template/footer/footer.wxml-->
+<view class="footerContainer">
+  <view class='footerContext'>
+    <view class="home">
+        <image src="../../../images/file_594b69153beb3.png"></image>
+        <text class='active'>首页</text>
+    </view>
+     <view class="home">
+        <image src="../../../images/file_594a140485d3c.png"></image>
+        <text>分类</text>
+    </view>
+    <view class="home">
+        <image src="../../../images/file_594a142ce69ce.png"></image>
+        <text>购物车</text>
+    </view>
+    <view class="home">
+        <image src="../../../images/file_594a14051dfba.png"></image>
+        <text>我的</text>
+    </view>
+  </view>
+</view>
